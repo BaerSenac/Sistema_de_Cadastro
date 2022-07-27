@@ -1,0 +1,31 @@
+.button {
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: #e7e7e7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 2s ease;
+    box-shadow: 0 1px 2px rgb(163, 160, 160);
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.button.purple {
+    background-color: #e7e7e7;
+    color: #037888;
+}
+
+.button.green {
+    background-color: #03bb22;
+}
+
+.button.red {
+    background-color: #d81b02;
+}
+
+.button:hover {
+    box-shadow: inset 200px 0 0 #3636361f;
+}
