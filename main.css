@@ -8,6 +8,7 @@
     --primary-color: #037888;
     --secundary-color: #d3d3d3;
     --shadow-color:rgb(177, 175, 175);
+    --shadow-modal-color:rgb(66, 66, 66);
 }
 
 body {
@@ -19,10 +20,12 @@ body {
 
 header {
     background-color: var(--primary-color);
-    height: 70px;
-    text-align: center;
+    height: 60px;
+    text-align: left;
     line-height: 70px;
     box-shadow: 0 1px 2px #ccc;
+    
+    
 }
 
 main {
@@ -31,7 +34,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
-    margin: 5vh auto;
+    margin: 3vh auto;
     padding: 20px;
     box-shadow: 2px 2px 10px var(--shadow-color);
 }

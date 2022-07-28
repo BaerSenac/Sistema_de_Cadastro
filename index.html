@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="header-title.css">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="records.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <title>CRUD Forms</title>
 </head>
 <body>
     <header>
-        <h1 class="header-title">Check List</h1>
+        <h1 class="header-title">Check List:<input type="text" class="header-input" placeholder="Nome do formulário"></h1>
     </header>
     <main>
-        <button type="button" class="button purple">Novo +</button>
+        <button type="button" class="button default">Novo +</button>
         <table class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>E-mail</th>
-                    <th>Celular</th>
+                    <th>Contato</th>
                     <th>Cidade</th>
                     <th>Processo</th>
                     <th>Açao</th>
@@ -63,6 +64,25 @@
                 </tr>
             </tbody>
         </table>
+        <div class="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" class="modal-field" placeholder="Email">
+                    <input type="text" class="modal-field" placeholder="Contato">
+                    <input type="text" class="modal-field" placeholder="Cidade">
+                    <input type="text" class="modal-field" placeholder="Processo">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button default">Cancelar</button>
+                </footer>
+            </div>
+        </div>
     </main>
     <footer>footer</footer>
 </body>

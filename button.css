@@ -1,7 +1,7 @@
 .button {
     border-style: none;
     height: 40px;
-    padding: 6px 12px;
+    padding: 6px 20px;
     background-color: black;
     color: #e7e7e7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,13 +13,17 @@
     font-weight: 400;
 }
 
-.button.purple {
+.button.default {
     background-color: #e7e7e7;
     color: #037888;
 }
 
 .button.green {
-    background-color: #03bb22;
+    background-color: #014852;
+}
+.button.green:hover {
+    background-color: #b2b4b6;
+    color: #014852;
 }
 
 .button.red {
