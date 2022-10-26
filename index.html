@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="header-title.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="records.css">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-title.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
     <title>CRUD Forms</title>
 </head>
 <body>
     <header>
-        <h1 class="header-title">Check List:<input type="text" class="header-input" placeholder="Nome do formulário"></h1>
+        <h1 class="header-title">Check List</h1>
     </header>
     <main>
-        <button type="button" class="button default">Novo +</button>
+        <button type="button" class="button default mobile" id="cadastrarCliente">Novo +</button>
         <table class="records">
             <thead>
                 <tr>
@@ -64,11 +65,11 @@
                 </tr>
             </tbody>
         </table>
-        <div class="modal">
+        <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
                     <h2>Novo Cliente</h2>
-                    <span class="modal-close">&#10006;</span>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form class="modal-form">
                     <input type="text" class="modal-field" placeholder="Nome do Cliente">
@@ -84,6 +85,6 @@
             </div>
         </div>
     </main>
-    <footer>footer</footer>
+    <footer>Copyright &copy; Jonathan Baer</footer>
 </body>
 </html>
