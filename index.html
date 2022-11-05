@@ -18,7 +18,7 @@
     </header>
     <main>
         <button type="button" class="button default mobile" id="cadastrarCliente">Novo +</button>
-        <table class="records">
+        <table id="tbClient" class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -30,7 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td>Jonathan</td>
                     <td>jonathan@gmail.com</td>
                     <td>(16) 99646-7556</td>
@@ -40,29 +40,7 @@
                         <button type="button" class="button green">Editar</button>
                         <button type="button" class="button red">Excluir</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>Bryan</td>
-                    <td>Bryan@gmail.com</td>
-                    <td>(16) 99646-4444</td>
-                    <td>Araraquara</td>
-                    <td>Lavagem</td>
-                    <td>
-                        <button type="button" class="button green">Editar</button>
-                        <button type="button" class="button red">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Alessandro</td>
-                    <td>Alessandro@gmail.com</td>
-                    <td>(16) 99646-1234</td>
-                    <td>Araraquara</td>
-                    <td>Farol</td>
-                    <td>
-                        <button type="button" class="button green">Editar</button>
-                        <button type="button" class="button red">Excluir</button>
-                    </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
         <div class="modal" id="modal">
@@ -71,16 +49,16 @@
                     <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
-                    <input type="email" class="modal-field" placeholder="Email">
-                    <input type="text" class="modal-field" placeholder="Contato">
-                    <input type="text" class="modal-field" placeholder="Cidade">
-                    <input type="text" class="modal-field" placeholder="Processo">
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="Email" required>
+                    <input type="text"  id="contato" class="modal-field" placeholder="Contato" required>
+                    <input type="text"  id="cidade" class="modal-field" placeholder="Cidade" required>
+                    <input type="text"  id="processo" class="modal-field" placeholder="Processo" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green">Salvar</button>
-                    <button class="button default">Cancelar</button>
+                    <button class="button green" id="salvar">Salvar</button>
+                    <button class="button default" id="cancelar">Cancelar</button>
                 </footer>
             </div>
         </div>
